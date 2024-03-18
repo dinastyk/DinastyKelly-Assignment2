@@ -5,7 +5,22 @@ let colorSelected;
 
 // Add a row
 function addR() {
-    alert("Clicked Add Row"); // Replace this line with your code.
+    let table = document.getElementById("grid");
+    let newrow = table.inserRow();
+    let newcell =newrow.insertCell();
+    numRows++;
+    numCols++;
+    
+    for(let i = 0; i < numCols; i++){
+        newcell = newrow.insertCell(); //inserting the new cells 
+    }
+
+    for (let i = 0; i < numCols; i++){ //for each cell, this will use the event listener for clicks
+        newcell = newrow.insertCell();
+        newcell.addEventListener("click", function(){
+        newcell.style.backgroundColor = colorSelected;
+    });
+    } 
 }
 
 // Add a column
