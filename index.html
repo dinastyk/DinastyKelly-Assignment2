@@ -6,6 +6,7 @@
 </head>
 <body>
     <!-- Menu Buttons -->
+    <div class = "menu">
     <button onclick="addR()">Add Row</button>
     <button onclick="addC()">Add Col</button>
     <button onclick="removeR()">Remove Row</button>
@@ -13,18 +14,27 @@
     <button onclick="fillU()">Fill All Uncolored</button>
     <button onclick="fillAll()">Fill All</button>
     <button onclick="clearAll()">Clear</button>
-    <select onchange="selectColor()" id="selectedColorId">
+    <div class = "selectcolor">
+        <p> Choose a color!</p>
+        <select onchange="selectColor()" id="selectedColorId">
         <option value="SELECT">SELECT</option>
         <option value="Red">Red</option>
         <option value="Blue">Blue</option>
         <option value="Green">Green</option>
         <option value="Yellow">Yellow</option>
-        
+        <option value="Brown">Brown</option>
+        <option value="Black">Black</option>
+        <option value="Purple">Purple</option>
+
+
+    </div>
+    </div>
     </select>
     <!-- Grid Table -->
+   <div class ="table">
     <table id="grid">
-        
     </table>
+    </div>
     <!-- Script -->
     <script src="script.js"></script>
 </body>
