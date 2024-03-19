@@ -7,3 +7,31 @@ td{
     width: 50px;
     background-color: white;
 }
+
+.menu button{
+    border: 0;
+    border-radius: 1rem;
+    padding: 0.50rem;
+    margin: 0.5rem 1rem;
+    background-color: rgb(27, 12, 27);
+    color: rgb(238, 164, 255);
+}
+.menu button:hover{
+    background-color:rgb(192, 0, 235);
+    color:rgb(193, 0, 145);
+}
+.table{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding-top: 1rem;
+}
+.selectcolor{
+    display: flex;
+    flex-direction: column;
+}
+.selectcolor p{
+    font-family: 'American Typewriter', 'Arial';
+    margin: 0;
+    color: rgb(189, 49, 240);
+}
